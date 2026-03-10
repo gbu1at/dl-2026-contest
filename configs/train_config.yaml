@@ -6,34 +6,34 @@ num_epoch: 5
 
 augmentations:
     train_transform:
-        image_size: ...
+        image_size: 256
     val_transform:
-        image_size: ...
-
+        image_size: 256
 
 dataloader:
     dataset:
         train:
-            annotation_file: ...
-            img_dir: ...
+            annotation_file: ../data/train_split.csv
+            img_dir: ./data/train/train
         val:
-            annotation_file: ...
-            img_dir: ...
+            annotation_file: ../data/val_split.csv
+            img_dir: ./data/train/train
 
     batch_size: 32
     num_workers: -1
 
 
 model:
-    model_name: ...
-    num_classes: ...
+    model_name: resnet50
+    num_classes: 196
     pretrained: True
 
 
 optimizer:
-    opt_name: ...
-    opt_params: ...
-
+    opt_name: adam
+    opt_params:
+        lr: 0.001
+        weight_decay: 0.0001
 
 logger:
-    experiment_dir: ...
+    experiment_dir: experiment_1
