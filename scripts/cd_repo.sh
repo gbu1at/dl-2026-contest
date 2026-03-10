@@ -1,0 +1,1 @@
+cd /content/drive/MyDrive/dl-2026-contest/dl-2026-contest
