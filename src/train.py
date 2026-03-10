@@ -20,7 +20,7 @@ def main():
 
     set_seed(cfg["seed"])
 
-    train_dataloader, val_dataloader = build_dataloader(cfg["dataloader"])
+    train_dataloader, val_dataloader = build_dataloader(cfg)
     model = get_model(cfg["model"])
     optimizer = get_optimizer(cfg["optimizer"], model)
     criterion = get_criterion(cfg)
