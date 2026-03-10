@@ -1,0 +1,39 @@
+seed: 42
+
+
+num_epoch: 5
+
+
+augmentations:
+    train_transform:
+        image_size: ...
+    val_transform:
+        image_size: ...
+
+
+dataloader:
+    dataset:
+        train:
+            annotation_file: ...
+            img_dir: ...
+        val:
+            annotation_file: ...
+            img_dir: ...
+
+    batch_size: 32
+    num_workers: -1
+
+
+model:
+    model_name: ...
+    num_classes: ...
+    pretrained: True
+
+
+optimizer:
+    opt_name: ...
+    opt_params: ...
+
+
+logger:
+    experiment_dir: ...
