@@ -1,3 +1,10 @@
+import sys
+import os
+
+PROJECT_ROOT = "/content/drive/MyDrive/dl-2026-contest/dl-2026-contest/src"
+if PROJECT_ROOT not in sys.path:
+    sys.path.append(PROJECT_ROOT)
+
 import torch
 
 from utils.seed import set_seed
